@@ -1,0 +1,83 @@
+{
+	"name": "SEC",
+	"scopeName": "text.sec",
+	"fileTypes": ["sec"],
+	"patterns": [
+		{
+			"comment": "Comments",
+			"name": "comment",
+			"match": "(#).*$\n?"
+		},
+		{
+			"comment": "Remarks in rules",
+			"name": "comment",
+			"match": "rem=.*$\n?"
+		},
+		{
+			"comment": "Captured regex variables",
+			"name": "entity.other.attribute-name",
+			"match": "\\$\\d+"
+		},
+		{
+			"comment": "String literals",
+			"name": "string",
+			"match": "(\".*?\"|'.*?')"
+		},
+		{
+			"comment": "Pattern capture groups",
+			"name": "entity.other.attribute-name",
+			"match": "\\(.*?\\)"
+		},
+		{
+			"comment": "Fields",
+			"name": "keyword",
+			"match": "^(type|desc|pattern|action|window|thresh|time|constring|continue|script|ptype|init|end|slide|multact|cfset|constset|joincfset|procallin)"
+		},
+		{
+			"comment": "Numbers",
+			"name": "constant.numeric",
+			"match": "(?<!\\$)\\d+"
+		},
+		{
+			"comment": "Rule types",
+			"name": "entity.name.function",
+			"match": "(Single|SingleWithScript|SingleWithSuppress|Pair|PairWithWindow|SingleWithThreshold|SingleWith2Thresholds|EventGroup|Suppress|Calendar|Jump|Options)$\n?"
+		},
+		{
+			"comment": "Pattern types",
+			"name": "variable.parameter",
+			"match": "(SubStr|RegExp|PerlFunc|Cached|TValue)$\n?"
+		},
+		{
+			"comment": "Continue field parameters",
+			"name": "variable.parameter",
+			"match": "(TakeNext|GoTo|DontCont|EndMatch)$\n?"
+		},
+		{
+			"comment": "Multact field parameters",
+			"name": "variable.parameter",
+			"match": "(Yes|No)$\n?"
+		},
+		{
+			"comment": "Action list variables",
+			"name": "support.function",
+			"match": "(?<=[=\\s])(none|logonly|write|owritecl|udgram|ustream|udpsock|tcpsock|shellcmd|spawn|pipe|create|delete|obsolete|set|alias|unalias|add|prepend|fill|report|copy|empty|pop|shift|exists|getsize|getaliases|getltime|getctime|setctime|event|tevent|reset|getwpos|setwpos|assign|free|eval|call|lcall|rewrite|if)\\s"
+		},
+		{
+			"comment": "Cmdline scripts",
+			"name": "support.function",
+			"match": "(?<=[=\\s])(mail)\\s"
+		},
+		{
+			"comment": "SEC predefined action list variables",
+			"name": "entity.other.attribute-name",
+			"match": "%[stu]"
+		},
+		{
+			"comment": "User defined action list variables",
+			"name": "support.constant",
+			"match": "%[a-zA-Z]"
+		}
+	],
+	"uuid": "945f76c1-0c91-4e80-b801-d5cb8cc95742"
+}

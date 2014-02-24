@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+type=Pair
+ptype=${1:RegExp}
+pattern=$2
+desc=$3
+action=${4:action_on_pattern_match}
+ptype2=${5:RegExp}
+pattern2=$6
+desc2=$7
+action2=${8:action_on_pattern2_match_if_in_window}
+window=${9:time_between_events}
+]]></content>
+    <tabTrigger>pair</tabTrigger>
+    <scope>text.sec</scope>
+    <description>Pair</description>
+</snippet>

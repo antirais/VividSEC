@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+type=Calendar
+time=${1:0 5 * * *}
+desc=$2
+action=$3
+]]></content>
+	<tabTrigger>calendar</tabTrigger>
+	<scope>text.sec</scope>
+	<description>Calendar</description>
+</snippet>

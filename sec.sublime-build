@@ -1,0 +1,10 @@
+{
+	"cmd": ["sec", "--conf=$file", "--testonly"],
+	"selector": "text.sec",
+	"variants":	[
+		{
+			"cmd": ["sec", "-h"],
+			"name": "Help"
+		}
+	]
+}

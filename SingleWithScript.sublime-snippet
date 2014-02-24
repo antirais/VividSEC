@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+type=SingleWithScript
+ptype=${1:RegExp}
+pattern=$2
+script=$3
+desc=$4
+action=${5:action_on_success}
+action2=${6:action_on_failure}
+]]></content>
+	<tabTrigger>singlewithscript</tabTrigger>
+	<scope>text.sec</scope>
+	<description>SingleWithScript</description>
+</snippet>

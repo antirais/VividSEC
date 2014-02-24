@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+type=SingleWithSuppress
+ptype=${1:RegExp}
+pattern=${2:regex}
+desc=${3:description}
+action=${4:action}
+window=${5:supress_seconds}
+]]></content>
+	<tabTrigger>singlewithsuppress</tabTrigger>
+	<scope>text.sec</scope>
+	<description>SingleWithSuppress</description>
+</snippet>

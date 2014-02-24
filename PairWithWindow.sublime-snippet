@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+type=PairWithWindow
+ptype=${1:RegExp}
+pattern=$2
+desc=$3
+action=${4:action_after_window_and_only_pattern_match}
+ptype2=${5:RegExp}
+pattern2=$6
+desc2=$7
+action2=${8:action_after_window_and_both_patterns_match}
+window=${9:time_between_events}
+]]></content>
+    <tabTrigger>pairwithwindow</tabTrigger>
+    <scope>text.sec</scope>
+    <description>PairWithWindow</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+type=Single
+ptype=${1:RegExp}
+pattern=$2
+desc=$3
+action=$4
+]]></content>
+    <tabTrigger>single</tabTrigger>
+    <scope>text.sec</scope>
+    <description>Single</description>
+</snippet>

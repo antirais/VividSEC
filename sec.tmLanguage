@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>sec</string>
+	</array>
+	<key>name</key>
+	<string>SEC</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Comments</string>
+			<key>match</key>
+			<string>(#).*$
+?</string>
+			<key>name</key>
+			<string>comment</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Remarks in rules</string>
+			<key>match</key>
+			<string>rem=.*$
+?</string>
+			<key>name</key>
+			<string>comment</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Captured regex variables</string>
+			<key>match</key>
+			<string>\$\d+</string>
+			<key>name</key>
+			<string>entity.other.attribute-name</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>String literals</string>
+			<key>match</key>
+			<string>(".*?"|'.*?')</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Pattern capture groups</string>
+			<key>match</key>
+			<string>\(.*?\)</string>
+			<key>name</key>
+			<string>entity.other.attribute-name</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Fields</string>
+			<key>match</key>
+			<string>^(type|desc|pattern|action|window|thresh|time|constring|continue|script|ptype|init|end|slide|multact|cfset|constset|joincfset|procallin)</string>
+			<key>name</key>
+			<string>keyword</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Numbers</string>
+			<key>match</key>
+			<string>(?&lt;!\$)\d+</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Rule types</string>
+			<key>match</key>
+			<string>(Single|SingleWithScript|SingleWithSuppress|Pair|PairWithWindow|SingleWithThreshold|SingleWith2Thresholds|EventGroup|Suppress|Calendar|Jump|Options)$
+?</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Pattern types</string>
+			<key>match</key>
+			<string>(SubStr|RegExp|PerlFunc|Cached|TValue)$
+?</string>
+			<key>name</key>
+			<string>variable.parameter</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Continue field parameters</string>
+			<key>match</key>
+			<string>(TakeNext|GoTo|DontCont|EndMatch)$
+?</string>
+			<key>name</key>
+			<string>variable.parameter</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Multact field parameters</string>
+			<key>match</key>
+			<string>(Yes|No)$
+?</string>
+			<key>name</key>
+			<string>variable.parameter</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Action list variables</string>
+			<key>match</key>
+			<string>(?&lt;=[=\s])(none|logonly|write|owritecl|udgram|ustream|udpsock|tcpsock|shellcmd|spawn|pipe|create|delete|obsolete|set|alias|unalias|add|prepend|fill|report|copy|empty|pop|shift|exists|getsize|getaliases|getltime|getctime|setctime|event|tevent|reset|getwpos|setwpos|assign|free|eval|call|lcall|rewrite|if)\s</string>
+			<key>name</key>
+			<string>support.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Cmdline scripts</string>
+			<key>match</key>
+			<string>(?&lt;=[=\s])(mail)\s</string>
+			<key>name</key>
+			<string>support.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>SEC predefined action list variables</string>
+			<key>match</key>
+			<string>%[stu]</string>
+			<key>name</key>
+			<string>entity.other.attribute-name</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>User defined action list variables</string>
+			<key>match</key>
+			<string>%[a-zA-Z]</string>
+			<key>name</key>
+			<string>support.constant</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.sec</string>
+	<key>uuid</key>
+	<string>945f76c1-0c91-4e80-b801-d5cb8cc95742</string>
+</dict>
+</plist>

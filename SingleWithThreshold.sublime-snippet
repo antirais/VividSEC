@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+type=SingleWithThreshold
+ptype=${1:RegExp}
+pattern=${2:regex}
+desc=${3:description}
+action=${4:action}
+thresh=${5:threshold_count}
+window=${6:supress_seconds}
+]]></content>
+	<tabTrigger>singletresh</tabTrigger>
+	<scope>text.sec</scope>
+	<description>SingleWithThreshold</description>
+</snippet>

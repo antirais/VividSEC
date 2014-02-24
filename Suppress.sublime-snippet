@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+type=Suppress
+ptype=${1:RegExp}
+pattern=$2
+desc=$3
+]]></content>
+    <tabTrigger>suppress</tabTrigger>
+    <scope>text.sec</scope>
+    <description>Suppress</description>
+</snippet>

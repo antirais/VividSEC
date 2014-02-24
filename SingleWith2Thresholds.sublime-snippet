@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+type=SingleWith2Thresholds
+ptype${1:RegExp}
+pattern=${2:regex}
+desc=${3:description}
+action=${4:action}
+window=${5:supress_seconds}
+thresh=${6:threshold_count}
+desc2=${7:description}
+action2=${8:description}
+window2=${9:supress_seconds}
+thresh2=${10:threshold_count}
+]]></content>
+	<tabTrigger>singlewith2thresholds</tabTrigger>
+	<scope>text.sec</scope>
+	<description>SingleWith2Thresholds</description>
+</snippet>

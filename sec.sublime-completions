@@ -1,0 +1,106 @@
+{
+    "scope": "text.sec - source - comment",
+
+    "completions":
+    [
+        //Pattern types
+        "SubStr",
+        "RegExp",
+        "PerlFunc",
+        "Cached",
+        "TValue",
+
+        //Rule types
+        "Single",
+        "SingleWithScript",
+        "SingleWithSuppress",
+        "Pair",
+        "PairWithWindow",
+        "SingleWithThreshold",
+        "SingleWith2Thresholds",
+        "EventGroup",
+        "Suppress",
+        "Calendar",
+        "Jump",
+        "Options",
+
+        //Continue field parameters
+        "TakeNext",
+        "GoTo",
+        "DontCont",
+        "EndMatch",
+
+        //Multact field parameters
+        "Yes",
+        "No",
+
+        //Fields
+        { "trigger": "type",        "contents": "type=${1:rule_type}" },
+        { "trigger": "desc",        "contents": "desc=${1:string}" },
+        { "trigger": "pattern",     "contents": "pattern=${1:regex}" },
+        { "trigger": "action",      "contents": "action=${1:action_name}" },
+        { "trigger": "window",      "contents": "window=${1:time}" },
+        { "trigger": "thresh",      "contents": "thresh=${1:time}" },
+        { "trigger": "time",        "contents": "time=${1:* * * * *}" },
+        { "trigger": "constring",   "contents": "constring=$1" },
+        { "trigger": "continue",    "contents": "continue=${1:TakeNext}" },
+        { "trigger": "script",      "contents": "script=${1:script}" },
+        { "trigger": "ptype",       "contents": "ptype=${1:RegExp}" },
+        { "trigger": "init",        "contents": "init=${1:action_list}" },
+        { "trigger": "end",         "contents": "end=${1:action_list}" },
+        { "trigger": "slide",       "contents": "slide=${1:action_list}" },
+        { "trigger": "multact",     "contents": "multact=${1:Yes}" },
+        { "trigger": "cfset",       "contents": "cfset=${1:conf conf2 conf3}" },
+        { "trigger": "constset",    "contents": "constset=${1:Yes}" },
+        { "trigger": "joincfset",   "contents": "joincfset=${1:conf conf2 conf3}" },
+        { "trigger": "procallin",   "contents": "procallin=${1:Yes}" },
+
+        //Action list variables
+        { "trigger": "none",        "contents": "none" },
+        { "trigger": "logonly",     "contents": "logonly ${1:string}" },
+        { "trigger": "write",       "contents": "write ${1:-} ${2:string}" },
+        { "trigger": "owritecl",    "contents": "owritecl ${1:filename} ${2:string}" },
+        { "trigger": "udgram",      "contents": "udgram ${1:filename} ${2:%s}" },
+        { "trigger": "ustream",     "contents": "ustream ${1:filename} ${2:%s}" },
+        { "trigger": "udpsock",     "contents": "udpsock ${1:host}:${2:port} ${3:%s}" },
+        { "trigger": "tcpsock",     "contents": "tcpsock ${1:host}:${2:port} ${3:%s}" },
+        { "trigger": "shellcmd",    "contents": "shellcmd ${1:cmdline}" },
+        { "trigger": "spawn",       "contents": "spawn ${1:cmdline}" },
+        { "trigger": "pipe",        "contents": "pipe '${1:%s}' ${2:cmdline}" },
+        { "trigger": "create",      "contents": "create ${1:name} ${2:time} ${3:(action_list)}" },
+        { "trigger": "delete",      "contents": "delete ${1:name}" },
+        { "trigger": "obsolete",    "contents": "obsolete ${1:name}" },
+        { "trigger": "set",         "contents": "set ${1:name} ${2:time} ${3:(action_list)}" },
+        { "trigger": "alias",       "contents": "alias ${1:name} ${2:alias}" },
+        { "trigger": "unalias",     "contents": "unalias ${1:alias}" },
+        { "trigger": "add",         "contents": "add ${1:name} ${2:string}" },
+        { "trigger": "prepend",     "contents": "prepend ${1:name} ${2:string}" },
+        { "trigger": "fill",        "contents": "fill ${1:name} ${2:string}" },
+        { "trigger": "report",      "contents": "report ${1:name} ${2:cmdline}" },
+        { "trigger": "copy",        "contents": "copy ${1:name} %${2:var}" },
+        { "trigger": "empty",       "contents": "empty ${1:name} %${2:var}" },
+        { "trigger": "pop",         "contents": "pop ${1:name} %${2:var}" },
+        { "trigger": "shift",       "contents": "shift ${1:name} %${2:var}" },
+        { "trigger": "exists",      "contents": "exists ${1:var} %${2:name}" },
+        { "trigger": "getsize",     "contents": "getsize ${1:var} %${2:name}" },
+        { "trigger": "getaliases",  "contents": "getaliases ${1:var} %${2:name}" },
+        { "trigger": "getltime",    "contents": "getltime ${1:var} %${2:name}" },
+        { "trigger": "getctime",    "contents": "getctime ${1:var} %${2:name}" },
+        { "trigger": "setctime",    "contents": "setctime ${1:time} %${2:name}" },
+        { "trigger": "event",       "contents": "event ${1:time} ${2:string}" },
+        { "trigger": "tevent",      "contents": "tevent ${1:time} ${2:string}" },
+        { "trigger": "reset",       "contents": "reset ${1:offset} ${2:string}" },
+        { "trigger": "getwpos",     "contents": "getwpos %${1:var} ${2:offset} ${3:string}" },
+        { "trigger": "setwpos",     "contents": "setwpos ${1:time} ${2:offset} ${3:string}" },
+        { "trigger": "assign",      "contents": "assign %${1:var} ${2:string}" },
+        { "trigger": "free",        "contents": "free %${1:var}" },
+        { "trigger": "eval",        "contents": "eval %${1:var} ${2:code}" },
+        { "trigger": "call",        "contents": "call %${1:var} %${2:ref} ${3:paramlist}" },
+        { "trigger": "lcall",       "contents": "lcall %${1:var} ${2:paramlist} -> %${3:code}" },
+        { "trigger": "rewrite",     "contents": "rewrite %${1:lnum} ${2:string}" },
+        { "trigger": "if",          "contents": "if %${1:var} (${2:action_list}) else (${3:action_list})" },
+
+        //Cmdline scripts
+        { "trigger": "mail",        "contents": "mail -s '${1:subject}' ${2:root@localhost}" }
+    ]
+}

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+type=EventGroup
+ptype=${1:RegExp}
+pattern=$2
+desc=$4
+action=$5
+window=$6
+]]></content>
+    <tabTrigger>eventgroup</tabTrigger>
+    <scope>text.sec</scope>
+    <description>EventGroup</description>
+</snippet>
