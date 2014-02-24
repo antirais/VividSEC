@@ -56,7 +56,7 @@
 			<key>comment</key>
 			<string>Fields</string>
 			<key>match</key>
-			<string>^(type|desc|pattern|action|window|thresh|time|constring|continue|script|ptype|init|end|slide|multact|cfset|constset|joincfset|procallin)</string>
+			<string>^(type|desc|pattern|action|window|thresh|time|constring|continue|script|ptype|init|end|slide|multact|cfset|constset|joincfset|procallin|context)</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>

@@ -31,7 +31,7 @@
 		{
 			"comment": "Fields",
 			"name": "keyword",
-			"match": "^(type|desc|pattern|action|window|thresh|time|constring|continue|script|ptype|init|end|slide|multact|cfset|constset|joincfset|procallin)"
+			"match": "^(type|desc|pattern|action|window|thresh|time|constring|continue|script|ptype|init|end|slide|multact|cfset|constset|joincfset|procallin|context)"
 		},
 		{
 			"comment": "Numbers",

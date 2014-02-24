@@ -54,6 +54,7 @@
         { "trigger": "constset",    "contents": "constset=${1:Yes}" },
         { "trigger": "joincfset",   "contents": "joincfset=${1:conf conf2 conf3}" },
         { "trigger": "procallin",   "contents": "procallin=${1:Yes}" },
+        { "trigger": "context",     "contents": "context=${1:context}" },
 
         //Action list variables
         { "trigger": "none",        "contents": "none" },
