@@ -8,6 +8,8 @@ This plugin provides:
 2. basic tab completion
 3. snippets for pattern types
 
+Filenames with '.sec' extension are automatically recognized.
+
 ##Intallation
 
 This plugin isn't currently ready to be installed automatically by Package Conrtrol.
