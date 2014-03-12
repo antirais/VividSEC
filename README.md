@@ -10,6 +10,19 @@ This plugin provides:
 
 Filenames with '.sec' extension are automatically recognized.
 
+###Tab completions
+| Rule type | Tab trigger |
+|:----------|------------:|
+| Calendar | calendar |
+| EventGroup | eventgroup |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
+
 ##Intallation
 
 This plugin isn't currently ready to be installed automatically by Package Conrtrol.
