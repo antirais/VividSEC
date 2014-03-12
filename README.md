@@ -11,16 +11,20 @@ This plugin provides:
 Filenames with '.sec' extension are automatically recognized.
 
 ###Tab completions
-| Rule type | Tab trigger |
-|:----------|------------:|
-| Calendar | calendar |
-| EventGroup | eventgroup |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| Rule type             | Tab trigger           |
+|:----------------------|----------------------:|
+| Calendar              | calendar              |
+| EventGroup            | eventgroup            |
+| Jump                  | jump                  |
+| Options               | options               |
+| Pair                  | pair                  |
+| PairWithWindow        | pairwithwindow        |
+| Single                | single                |
+| SingleWith2Thresholds | singlewith2thresholds |
+| SingleWithScript      | singlewithscript      |
+| SingleWithSuppress    | singlewithsuppress    |
+| SingleWithThreshold   | singletresh           | 
+| Suppress              | suppress              |
 
 
 ##Intallation
