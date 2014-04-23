@@ -6,7 +6,7 @@
 		{
 			"comment": "Comments",
 			"name": "comment",
-			"match": "(#).*$\n?"
+			"match": "^\\s*(#).*$\n?"
 		},
 		{
 			"comment": "Remarks in rules",
