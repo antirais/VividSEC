@@ -3,6 +3,7 @@
 type=Jump
 ptype=${1:RegExp}
 pattern=$2
+cfset=$3
 ]]></content>
     <tabTrigger>jump</tabTrigger>
     <scope>text.sec</scope>
