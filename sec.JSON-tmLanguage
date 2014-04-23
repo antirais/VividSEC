@@ -30,7 +30,7 @@
 		},
 		{
 			"comment": "Ignore pattern capture groups",
-			"name": "string",
+			"name": "text",
 			"match": "\\(\\?:.*?\\)"
 		},
 		{

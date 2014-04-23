@@ -58,7 +58,7 @@
 			<key>match</key>
 			<string>\(\?:.*?\)</string>
 			<key>name</key>
-			<string>string</string>
+			<string>text</string>
 		</dict>
 		<dict>
 			<key>comment</key>
