@@ -30,9 +30,17 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Captured regex variables</string>
+			<string>Capture group numbered regex variables</string>
 			<key>match</key>
 			<string>\$\d+</string>
+			<key>name</key>
+			<string>entity.other.attribute-name</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Capture group named regex variables</string>
+			<key>match</key>
+			<string>\$\+{\w+}</string>
 			<key>name</key>
 			<string>entity.other.attribute-name</string>
 		</dict>
@@ -41,6 +49,14 @@
 			<string>String literals</string>
 			<key>match</key>
 			<string>(".*?"|'.*?')</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Ignore pattern capture groups</string>
+			<key>match</key>
+			<string>\(\?:.*?\)</string>
 			<key>name</key>
 			<string>string</string>
 		</dict>
@@ -108,7 +124,7 @@
 			<key>comment</key>
 			<string>Action list variables</string>
 			<key>match</key>
-			<string>(?&lt;=[=\s])(none|logonly|write|owritecl|udgram|ustream|udpsock|tcpsock|shellcmd|spawn|pipe|create|delete|obsolete|set|alias|unalias|add|prepend|fill|report|copy|empty|pop|shift|exists|getsize|getaliases|getltime|getctime|setctime|event|tevent|reset|getwpos|setwpos|assign|free|eval|call|lcall|rewrite|if)\s</string>
+			<string>(?&lt;=[=\s])(none|logonly|write|owritecl|udgram|ustream|udpsock|tcpsock|shellcmd|spawn|pipe|create|delete|obsolete|set|alias|unalias|add|prepend|fill|report|copy|empty|pop|shift|exists|getsize|getaliases|getltime|getctime|setctime|event|tevent|reset|getwpos|setwpos|assign|free|eval|call|lcall|rewrite|if);?\s</string>
 			<key>name</key>
 			<string>support.function</string>
 		</dict>
