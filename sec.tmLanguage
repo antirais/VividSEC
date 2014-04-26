@@ -37,10 +37,18 @@
 			<string>entity.other.attribute-name</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>string</string>
+				</dict>
+			</dict>
 			<key>comment</key>
 			<string>Capture group named regex variables</string>
 			<key>match</key>
-			<string>\$\+{\w+}</string>
+			<string>\$\+{(\w+)}</string>
 			<key>name</key>
 			<string>entity.other.attribute-name</string>
 		</dict>
@@ -53,20 +61,81 @@
 			<string>string</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>\(\?:</string>
 			<key>comment</key>
 			<string>Ignore pattern capture groups</string>
-			<key>match</key>
-			<string>\(\?:.*?\)</string>
+			<key>end</key>
+			<string>\)</string>
 			<key>name</key>
 			<string>text</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>.</string>
+					<key>name</key>
+					<string>text</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>\(\?&lt;(\w+)&gt;</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>string</string>
+				</dict>
+			</dict>
 			<key>comment</key>
-			<string>Pattern capture groups</string>
-			<key>match</key>
-			<string>\(.*?\)</string>
+			<string>Named pattern capture groups</string>
+			<key>end</key>
+			<string>\)</string>
 			<key>name</key>
 			<string>entity.other.attribute-name</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>.</string>
+					<key>name</key>
+					<string>entity.other.attribute-name</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\(</string>
+			<key>comment</key>
+			<string>Pattern capture groups</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>entity.other.attribute-name</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>.</string>
+					<key>name</key>
+					<string>entity.other.attribute-name</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>comment</key>

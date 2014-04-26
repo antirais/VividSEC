@@ -21,7 +21,10 @@
 		{
 			"comment": "Capture group named regex variables",
 			"name": "entity.other.attribute-name",
-			"match": "\\$\\+{\\w+}"
+			"match": "\\$\\+{(\\w+)}",
+			"captures": {
+				"1": { "name": "string" }
+			}
 		},
 		{
 			"comment": "String literals",
@@ -31,12 +34,44 @@
 		{
 			"comment": "Ignore pattern capture groups",
 			"name": "text",
-			"match": "\\(\\?:.*?\\)"
+			"begin": "\\(\\?:",
+			"patterns": [
+				{ "include": "$self" },
+				{
+					"name": "text",
+					"match": "."
+				}
+			],
+			"end": "\\)"
+		},
+		{
+			"comment": "Named pattern capture groups",
+			"name": "entity.other.attribute-name",
+			"begin": "\\(\\?<(\\w+)>",
+			"beginCaptures": {
+				"1": { "name": "string" }
+			},
+			"patterns": [
+				{ "include": "$self" },
+				{
+					"name": "entity.other.attribute-name",
+					"match": "."
+				}
+			],
+			"end": "\\)"
 		},
 		{
 			"comment": "Pattern capture groups",
 			"name": "entity.other.attribute-name",
-			"match": "\\(.*?\\)"
+			"begin": "\\(",
+			"patterns": [
+				{ "include": "$self" },
+				{
+					"name": "entity.other.attribute-name",
+					"match": "."
+				}
+			],
+			"end": "\\)"
 		},
 		{
 			"comment": "Fields",
