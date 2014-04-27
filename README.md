@@ -29,7 +29,7 @@ Filenames with '.sec' extension are automatically recognized.
 
 ##Intallation
 
-This plugin isn't currently ready to be installed automatically by Package Conrtrol.
+This plugin isn't currently ready to be installed automatically by Package Control.
 Please use this GitHub repositroy URL to add a new repository manually:
 
 Preferences -> Package Control: Add Repository -> https://github.com/antirais/VividSEC.git
