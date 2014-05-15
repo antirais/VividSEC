@@ -62,7 +62,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\(\?:</string>
+			<string>\(\?([-imsxadlup^]*:|#)</string>
 			<key>comment</key>
 			<string>Ignore pattern capture groups</string>
 			<key>end</key>

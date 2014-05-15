@@ -34,7 +34,7 @@
 		{
 			"comment": "Ignore pattern capture groups",
 			"name": "text",
-			"begin": "\\(\\?:",
+			"begin": "\\(\\?([-imsxadlup^]*:|#)",
 			"patterns": [
 				{ "include": "$self" },
 				{
