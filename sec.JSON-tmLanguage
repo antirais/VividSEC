@@ -19,11 +19,20 @@
 			"match": "\\$\\d+"
 		},
 		{
-			"comment": "Capture group named regex variables",
+			"comment": "Capture group named regex variables $+{name}",
 			"name": "entity.other.attribute-name",
 			"match": "\\$\\+{(\\w+)}",
 			"captures": {
 				"1": { "name": "string" }
+			}
+		},
+		{
+			"comment": "Cached match variables $:{entryname:varname}",
+			"name": "entity.other.attribute-name",
+			"match": "\\$:{(\\w+):(\\w+)}",
+			"captures": {
+				"1": { "name": "string" },
+				"2": { "name": "string" }
 			}
 		},
 		{
