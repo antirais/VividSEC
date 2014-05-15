@@ -5,7 +5,7 @@ ptype=${1:RegExp}
 pattern=$2
 desc=$3
 ]]></content>
-    <tabTrigger>suppress</tabTrigger>
+    <tabTrigger>sup</tabTrigger>
     <scope>text.sec</scope>
-    <description>Suppress</description>
+    <description>Suppress rule</description>
 </snippet>

@@ -4,7 +4,7 @@ type=Options
 joincfset=${1:conf conf2 conf3}
 procallin=${2:Yes}
 ]]></content>
-    <tabTrigger>options</tabTrigger>
+    <tabTrigger>opt</tabTrigger>
     <scope>text.sec</scope>
-    <description>Options</description>
+    <description>Options rule</description>
 </snippet>

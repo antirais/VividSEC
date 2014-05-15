@@ -5,7 +5,7 @@ time=${1:0 5 * * *}
 desc=$2
 action=$3
 ]]></content>
-	<tabTrigger>calendar</tabTrigger>
+	<tabTrigger>cal</tabTrigger>
 	<scope>text.sec</scope>
-	<description>Calendar</description>
+	<description>Calendar rule</description>
 </snippet>

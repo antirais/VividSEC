@@ -6,7 +6,7 @@ pattern=$2
 desc=$3
 action=$4
 ]]></content>
-    <tabTrigger>single</tabTrigger>
+    <tabTrigger>sin</tabTrigger>
     <scope>text.sec</scope>
-    <description>Single</description>
+    <description>Single rule</description>
 </snippet>

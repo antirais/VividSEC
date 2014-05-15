@@ -13,18 +13,18 @@ Filenames with '.sec' extension are automatically recognized.
 ###Tab completions
 | Rule type             | Tab trigger           |
 |:----------------------|----------------------:|
-| Calendar              | calendar              |
-| EventGroup            | eventgroup            |
+| Calendar              | cal                   |
+| EventGroup            | evg                   |
 | Jump                  | jump                  |
-| Options               | options               |
+| Options               | opt                   |
 | Pair                  | pair                  |
-| PairWithWindow        | pairwithwindow        |
-| Single                | single                |
-| SingleWith2Thresholds | singlewith2thresholds |
-| SingleWithScript      | singlewithscript      |
-| SingleWithSuppress    | singlewithsuppress    |
-| SingleWithThreshold   | singletresh           | 
-| Suppress              | suppress              |
+| PairWithWindow        | pww                   |
+| Single                | sin                   |
+| SingleWith2Thresholds | sw2                   |
+| SingleWithScript      | swscr                 |
+| SingleWithSuppress    | swsup                 |
+| SingleWithThreshold   | swt                   |
+| Suppress              | sup                   |
 
 
 ##Intallation
@@ -36,6 +36,6 @@ Preferences -> Package Control: Add Repository -> https://github.com/antirais/Vi
 
 ###Alternative installation
 
-1. clone this repository 
+1. clone this repository
 2. move all files to Sublime Text 2 Packages folder: e.g. ~/.config/sublime-text-2/Packages/VividSEC
 3. restart Sublime Text 2

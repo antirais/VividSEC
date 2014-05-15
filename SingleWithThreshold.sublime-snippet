@@ -8,7 +8,7 @@ action=${4:action}
 thresh=${5:threshold_count}
 window=${6:supress_seconds}
 ]]></content>
-	<tabTrigger>singletresh</tabTrigger>
+	<tabTrigger>swt</tabTrigger>
 	<scope>text.sec</scope>
-	<description>SingleWithThreshold</description>
+	<description>SingleWithThreshold rule</description>
 </snippet>

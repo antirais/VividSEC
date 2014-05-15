@@ -8,7 +8,7 @@ desc=$4
 action=${5:action_on_success}
 action2=${6:action_on_failure}
 ]]></content>
-	<tabTrigger>singlewithscript</tabTrigger>
+	<tabTrigger>swscr</tabTrigger>
 	<scope>text.sec</scope>
-	<description>SingleWithScript</description>
+	<description>SingleWithScript rule</description>
 </snippet>

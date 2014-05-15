@@ -13,5 +13,5 @@ window=${9:time_between_events}
 ]]></content>
     <tabTrigger>pair</tabTrigger>
     <scope>text.sec</scope>
-    <description>Pair</description>
+    <description>Pair rule</description>
 </snippet>

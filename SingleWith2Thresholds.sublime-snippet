@@ -12,7 +12,7 @@ action2=${8:description}
 window2=${9:supress_seconds}
 thresh2=${10:threshold_count}
 ]]></content>
-	<tabTrigger>singlewith2thresholds</tabTrigger>
+	<tabTrigger>sw2</tabTrigger>
 	<scope>text.sec</scope>
-	<description>SingleWith2Thresholds</description>
+	<description>SingleWith2Thresholds rule</description>
 </snippet>

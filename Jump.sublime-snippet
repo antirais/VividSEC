@@ -7,5 +7,5 @@ cfset=$3
 ]]></content>
     <tabTrigger>jump</tabTrigger>
     <scope>text.sec</scope>
-    <description>Jump</description>
+    <description>Jump rule</description>
 </snippet>

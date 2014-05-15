@@ -11,7 +11,7 @@ desc2=$7
 action2=${8:action_after_window_and_both_patterns_match}
 window=${9:time_between_events}
 ]]></content>
-    <tabTrigger>pairwithwindow</tabTrigger>
+    <tabTrigger>pww</tabTrigger>
     <scope>text.sec</scope>
-    <description>PairWithWindow</description>
+    <description>PairWithWindow rule</description>
 </snippet>

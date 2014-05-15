@@ -7,7 +7,7 @@ desc=${3:description}
 action=${4:action}
 window=${5:supress_seconds}
 ]]></content>
-	<tabTrigger>singlewithsuppress</tabTrigger>
+	<tabTrigger>swsup</tabTrigger>
 	<scope>text.sec</scope>
 	<description>SingleWithSuppress</description>
 </snippet>
