@@ -76,7 +76,7 @@
 		{
 			"comment": "Fields",
 			"name": "keyword",
-			"match": "^(type|desc|pattern|action|window|thresh|time|constring|continue|script|ptype|init|end|slide|multact|cfset|constset|joincfset|procallin|context)"
+			"match": "^(type|desc|pattern|action|window|thresh|time|constring|continue|script|ptype|init|end|slide|multact|cfset|constset|joincfset|procallin|context|count)"
 		},
 		{
 			"comment": "Numbers",
