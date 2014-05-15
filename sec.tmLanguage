@@ -141,7 +141,7 @@
 			<key>comment</key>
 			<string>Fields</string>
 			<key>match</key>
-			<string>^(type|desc|pattern|action|window|thresh|time|constring|continue|script|ptype|init|end|slide|multact|cfset|constset|joincfset|procallin|context|count|varmap)</string>
+			<string>^(action|cfset|constset|context|continue|count|desc|end|init|joincfset|multact|pattern|procallin|ptype|script|slide|thresh|time|type|varmap|window)</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
