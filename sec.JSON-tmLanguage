@@ -34,7 +34,7 @@
 		{
 			"comment": "Ignore pattern capture groups",
 			"name": "text",
-			"begin": "\\(\\?([-imsxadlup^]*:|#)",
+			"begin": "(?<!\\\\)\\(\\?([-imsxadlup^]*:|#)",
 			"patterns": [
 				{ "include": "$self" },
 				{
@@ -42,12 +42,12 @@
 					"match": "."
 				}
 			],
-			"end": "\\)"
+			"end": "(?<!\\\\)\\)"
 		},
 		{
 			"comment": "Named pattern capture groups",
 			"name": "entity.other.attribute-name",
-			"begin": "\\(\\?<(\\w+)>",
+			"begin": "(?<!\\\\)\\(\\?<(\\w+)>",
 			"beginCaptures": {
 				"1": { "name": "string" }
 			},
@@ -58,12 +58,12 @@
 					"match": "."
 				}
 			],
-			"end": "\\)"
+			"end": "(?<!\\\\)\\)"
 		},
 		{
 			"comment": "Pattern capture groups",
 			"name": "entity.other.attribute-name",
-			"begin": "\\(",
+			"begin": "(?<!\\\\)\\(",
 			"patterns": [
 				{ "include": "$self" },
 				{
@@ -71,7 +71,7 @@
 					"match": "."
 				}
 			],
-			"end": "\\)"
+			"end": "(?<!\\\\)\\)"
 		},
 		{
 			"comment": "Fields",

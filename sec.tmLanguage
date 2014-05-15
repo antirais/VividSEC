@@ -62,11 +62,11 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\(\?([-imsxadlup^]*:|#)</string>
+			<string>(?&lt;!\\)\(\?([-imsxadlup^]*:|#)</string>
 			<key>comment</key>
 			<string>Ignore pattern capture groups</string>
 			<key>end</key>
-			<string>\)</string>
+			<string>(?&lt;!\\)\)</string>
 			<key>name</key>
 			<string>text</string>
 			<key>patterns</key>
@@ -85,7 +85,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\(\?&lt;(\w+)&gt;</string>
+			<string>(?&lt;!\\)\(\?&lt;(\w+)&gt;</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -97,7 +97,7 @@
 			<key>comment</key>
 			<string>Named pattern capture groups</string>
 			<key>end</key>
-			<string>\)</string>
+			<string>(?&lt;!\\)\)</string>
 			<key>name</key>
 			<string>entity.other.attribute-name</string>
 			<key>patterns</key>
@@ -116,11 +116,11 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\(</string>
+			<string>(?&lt;!\\)\(</string>
 			<key>comment</key>
 			<string>Pattern capture groups</string>
 			<key>end</key>
-			<string>\)</string>
+			<string>(?&lt;!\\)\)</string>
 			<key>name</key>
 			<string>entity.other.attribute-name</string>
 			<key>patterns</key>
