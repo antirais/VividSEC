@@ -1,6 +1,6 @@
 #VividSEC
 
-Sublime Text 2 plugin for [SEC](http://simple-evcorr.sourceforge.net/) rules.
+Sublime Text 2/3 plugin for [SEC](http://simple-evcorr.sourceforge.net/) rules.
 
 This plugin provides:
 
