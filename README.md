@@ -37,5 +37,5 @@ Preferences -> Package Control: Add Repository -> https://github.com/antirais/Vi
 ###Alternative installation
 
 1. clone this repository
-2. move all files to Sublime Text 2 Packages folder: e.g. ~/.config/sublime-text-2/Packages/VividSEC
-3. restart Sublime Text 2
+2. move all files to Sublime Text Packages folder: e.g. ~/.config/sublime-text-3/Packages/VividSEC
+3. restart Sublime Text
