@@ -1,6 +1,6 @@
 # VividSEC
 
-Sublime Text 2/3 plugin for [SEC](https://simple-evcorr.github.io/) rules.
+Sublime Text 3 plugin for [SEC](https://simple-evcorr.github.io/) rules.
 
 This plugin provides:
 
@@ -26,7 +26,6 @@ Filenames with '.sec' extension are automatically recognized.
 | SingleWithSuppress    | swsup                 |
 | SingleWithThreshold   | swt                   |
 | Suppress              | sup                   |
-
 
 ## Installation
 
