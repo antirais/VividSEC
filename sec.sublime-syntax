@@ -1,0 +1,96 @@
+%YAML 1.2
+---
+name: SEC
+file_extensions: [sec]
+scope: text.sec
+
+contexts:
+  main:
+    - comment: Comments
+      scope: comment
+      match: ^\s*(#).*$?
+
+    - comment: Capture group numbered regex variables
+      scope: entity.other.attribute-name
+      match: "\\$\\d+"
+
+    - comment: Capture group named regex variables $+{name}
+      scope: entity.other.attribute-name
+      match: \$\+{(\w+)}
+      captures:
+        1: string
+
+    - comment: Cached match variables $:{entryname:varname}
+      scope: entity.other.attribute-name
+      match: \$:{(\w+):(\w+)}
+      captures:
+        1: string
+        2: string
+
+    - comment: String literals
+      scope: string
+      #match: (\".*?\"|'.*?')
+      match: '"'
+
+    - comment: Ignore pattern capture groups
+      scope: text
+      match: (?<!\\)\(\?([-imsxadlup^]*:|#)
+
+    - comment: Named pattern capture groups
+      scope: entity.other.attribute-name
+      match: (?<!\\)\(\?<(\w+)>.*\)
+      captures:
+        1: string
+
+    - comment: Pattern capture groups
+      scope: entity.other.attribute-name
+      match: '\(\?:.*\)'
+      captures:
+        1: string
+
+    - comment: Fields
+      scope: keyword
+      match: ^\s*(action|cfset|constset|context|continue|count|desc|end|init|joincfset|multact|pattern|procallin|ptype|script|slide|thresh|time|type|varmap|window|rem)\d*\b
+
+    - comment: Numbers
+      scope: constant.numeric
+      match: (?<!\$)\d+
+
+    - comment: Rule types
+      scope: entity.name.function
+      match: \b(Single|SingleWithScript|SingleWithSuppress|Pair|PairWithWindow|SingleWithThreshold|SingleWith2Thresholds|EventGroup|Suppress|Calendar|Jump|Options)\b
+
+    - comment: Pattern types
+      scope: variable.parameter
+      match: (SubStr|RegExp|PerlFunc|Cached|TValue)$?
+
+    - comment: Continue field parameters
+      scope: variable.parameter
+      match: (TakeNext|GoTo|DontCont|EndMatch)$?
+
+    - comment: Multact field parameters
+      scope: variable.parameter
+      match: (Yes|No)$?
+
+    - comment: Action list variables
+      scope: support.function
+      match: (?<=[=\s])(none|logonly|write|owritecl|udgram|ustream|udpsock|tcpsock|shellcmd|spawn|pipe|create|delete|obsolete|set|alias|unalias|add|prepend|fill|report|copy|empty|pop|shift|exists|getsize|getaliases|getltime|getctime|setctime|event|tevent|reset|getwpos|setwpos|assign|free|eval|call|lcall|rewrite|if);?\s
+
+    - comment: Cmdline scripts
+      scope: support.function
+      match: (?<=[=\s])(mail)\s
+
+    - comment: SEC predefined action list variables
+      scope: entity.other.attribute-name
+      match: '%[stu]'
+
+    - comment: User defined action list variables
+      scope: support.constant
+      match: '%[a-zA-Z]'
+
+  string:
+    - meta_scope: string.quoted.double.sec
+    - match: \\.
+      scope: constant.character.escape.sec
+    - match: '"'
+      pop: true
